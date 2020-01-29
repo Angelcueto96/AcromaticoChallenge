@@ -19,12 +19,12 @@ class BlogIndex extends React.Component {
           <h3
             style={{
               color: "rgba(0,122,204,0.7)",
-              //color: "gray",
+              
               textAlign: "justify"
             }}
           >
             {
-              "Un pequeño blog en dónde se muestran mis publicaciones guardadas en Contenful."
+              "Un pequeño blog en dónde se muestran mis publicaciones guardadas en Contentful."
             }
           </h3>
         </div>
