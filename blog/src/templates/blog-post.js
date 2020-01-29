@@ -38,13 +38,13 @@ class BlogPostTemplate extends React.Component {
             {post.date.split("T").map((item, index) => {
               if (index === 0) {
                 return (
-                  <div>
+                  <div key={index}>
                     <h3>publicado en:</h3>
                     <p>{item}</p>
                   </div>
                 )
               } else {
-                return <span></span>
+                return <span key={index}></span>
               }
             })}
           </header>
