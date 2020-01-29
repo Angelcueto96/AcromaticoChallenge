@@ -15,7 +15,21 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
+        <div>
+          <h3
+            style={{
+              color: "rgba(0,122,204,0.7)",
+              //color: "gray",
+              textAlign: "justify"
+            }}
+          >
+            {
+              "Un pequeño blog en dónde se muestran mis publicaciones guardadas en Contenful."
+            }
+          </h3>
+        </div>
         <Bio />
+
         {posts.map(({ node }) => {
           const title = node.title || node.slug
           return (
@@ -25,9 +39,7 @@ class BlogIndex extends React.Component {
                 boxShadow: " 1px 2px 13px -3px rgba(0,0,0,0.68)",
                 padding: "5%  2% 1% 2%",
                 marginBottom: "5%",
-                borderRadius: "2%"
-
-                
+                borderRadius: "2%",
               }}
             >
               <header>
@@ -35,7 +47,6 @@ class BlogIndex extends React.Component {
                   style={{
                     marginTop: 0,
                     marginBottom: rhythm(1 / 4),
-                    
                   }}
                 >
                   <Link style={{ boxShadow: `none` }} to={node.slug}>
