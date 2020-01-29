@@ -7,7 +7,7 @@ module.exports = {
     title: `Bienvenidos a mi Blog Personal`,
     author: `Angel Cueto`,
     description: `Un pequeño proyecto utilizando Gatsby y Contentful`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://vigilant-bardeen-b28b69.netlify.com/`,
     social: {
       twitter: `kylemathews`,
     },
