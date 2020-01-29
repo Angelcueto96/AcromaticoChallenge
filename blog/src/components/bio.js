@@ -54,7 +54,7 @@ const Bio = () => {
         }}
       />
       <p >
-        Escrito por <strong>{author}</strong> como prueba para Acromatico.
+        Desarrollado por <strong>{author}</strong> como prueba para <strong>{"Acromático Development"}</strong>.
         
       </p>
     </div>
