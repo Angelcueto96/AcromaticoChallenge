@@ -15,12 +15,14 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.title} description={post.title} />
-        <article>
+        <article 
+        >
           <header>
             <h1
               style={{
                 marginTop: rhythm(1),
                 marginBottom: 0,
+                color: "#007acc"
               }}
             >
               {post.title}
@@ -29,24 +31,18 @@ class BlogPostTemplate extends React.Component {
               style={{
                 ...scale(-1 / 5),
                 display: `block`,
+                marginTop: "2%",
                 marginBottom: rhythm(1),
+                textAlign: "justify"
+                
               }}
             >
               {post.content.content}
             </p>
 
-            {post.date.split("T").map((item, index) => {
-              if (index === 0) {
-                return (
-                  <div key={index}>
-                    <h3>publicado en:</h3>
-                    <p>{item}</p>
-                  </div>
-                )
-              } else {
-                return <span key={index}></span>
-              }
-            })}
+            <small>
+              <strong>Escrito en: </strong> {post.date.split("T")[0]}{" "}
+            </small>
           </header>
           <hr
             style={{
@@ -69,6 +65,7 @@ class BlogPostTemplate extends React.Component {
             }}
           >
             <li>
+              {console.log(previous)}
               {previous && (
                 <Link to={previous.slug} rel="prev">
                   ← {previous.title}

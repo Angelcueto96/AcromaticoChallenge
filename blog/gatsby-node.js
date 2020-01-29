@@ -10,6 +10,7 @@ exports.createPages = async ({ graphql, actions }) => {
       allContentfulPost{
         edges{
           node{
+            title
             slug
           }
         }
@@ -33,6 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
       path: post.node.slug,
       component: blogPost,
       context: {
+        
         slug: post.node.slug,
         previous,
         next,

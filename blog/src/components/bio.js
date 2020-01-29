@@ -53,8 +53,8 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
-        Escrito por <strong>{author}</strong>
+      <p >
+        Escrito por <strong>{author}</strong> como prueba para Acromatico.
         
       </p>
     </div>
